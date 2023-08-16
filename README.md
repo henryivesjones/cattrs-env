@@ -1,4 +1,10 @@
 # cattrs-env
+![Tests + Linting](https://github.com/henryivesjones/cattrs-env/actions/workflows/checks.yml/badge.svg?branch=main&event=push)
+![pypi](https://img.shields.io/pypi/v/cattrs-env)
+![License](https://img.shields.io/pypi/l/cattrs-env)
+![Downloads](https://img.shields.io/pypi/dm/cattrs-env)
+
+
 `cattrs-env` is an Environment Variable parser/validator which utilizes the [`cattrs`](https://github.com/python-attrs/cattrs) library.
 
 `cattrs-env` parses Environment Variables from `os.environ` and structures them into a [`cattrs` compatible dataclass](https://catt.rs/en/stable/structuring.html#simple-attrs-classes-and-dataclasses). Providing you with easy and type safe environment variables in your project.
