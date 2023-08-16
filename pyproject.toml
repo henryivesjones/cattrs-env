@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+
+[project]
+name = "cattrs-env"
+dynamic = ["version"]
+authors = [{ name = "Henry Jones", email = "henryivesjones@gmail.com" }]
+description = "A tool for parsing and validating env vars using cattrs"
+keywords = ["cattrs", "envvar", "environment variables", "attrs", "dataclasses"]
+
+license = { text = "MIT" }
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+dependencies = ["cattrs>=20"]
+readme = "README.md"
+requires-python = ">=3.7"
+
+[project.urls]
+Homepage = "https://github.com/henryivesjones/cattrs-env"
+
+
+[tool.setuptools.dynamic]
+version = { attr = "cattrs_env.__version__" }
+
+[tool.setuptools.package-data]
+"cattrs_env" = ["py.typed"]
