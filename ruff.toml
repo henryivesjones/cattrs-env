@@ -1,0 +1,4 @@
+# E: pycodestyle
+# F: Pyflakes
+# I: import sorting
+select = ["E", "F", "I"]

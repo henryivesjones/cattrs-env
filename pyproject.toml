@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+
+[project]
+name = "cattrs-env"
+dynamic = ["version"]
+authors = [{ name = "Henry Jones", email = "henryivesjones@gmail.com" }]
+description = "A tool for parsing and validating env vars using cattrs"
+dependencies = ["cattrs>=20"]
+
+
+[tool.setuptools.dynamic]
+version = { attr = "cattrs_env.__version__" }
+
+[tool.setuptools.package-data]
+"cattrs_env" = ["py.typed"]
