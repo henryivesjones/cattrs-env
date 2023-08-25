@@ -65,7 +65,7 @@ class CattrsEnv:
         for key, value in os.environ.items():
             try:
                 evaluated_value = literal_eval(value)
-            except ValueError:
+            except:
                 evaluated_value = value
             parsed_env[key] = evaluated_value
         try:
@@ -76,4 +76,4 @@ class CattrsEnv:
 
 
 __all__ = ["CattrsEnv", "CattrsEnvValidationError", "converter"]
-__version__ = "1.0.3"
+__version__ = "1.0.4"
