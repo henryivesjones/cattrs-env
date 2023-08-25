@@ -2,3 +2,6 @@
 # F: Pyflakes
 # I: import sorting
 select = ["E", "F", "I"]
+
+# E722 no bare except
+ignore = ["E722"]
